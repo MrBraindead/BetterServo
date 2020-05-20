@@ -38,3 +38,7 @@ void loop() {
   rot = analogRead(potpin);
   myServo.rotation(rot);
 }
+
+--more information--
+
+https://github.com/MrBraindead/BetterServo/wiki
