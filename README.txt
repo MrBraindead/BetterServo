@@ -5,7 +5,7 @@
 - mode(<input type>) 
 	Configures which input the function takes. 
 	('a' for analog, 'd' for degrees, 'r' for radiants) 
-	(default is 'a')
+	(the inputmode is 'a' by default)
 - conf(<minimum pulsewidth>, <maximum pulsewidth>) 
 	Configures range of pulsewidths the servo uses.
 	(enter pulswidth in microseconds) 
@@ -29,9 +29,9 @@ BetterServo myServo;
 
 void setup() {
   myServo.config_pin(servopin);
-  myServo.mode('a');        //not needed
-  myServo.conf(300, 2600);  //not needed
-  myServo.limit(0,180);     //not needed
+  myServo.mode('a');        //not needed in this example
+  myServo.conf(300, 2600);  //not needed in this example
+  myServo.limit(0,180);     //not needed in this example
 }
 
 void loop() {
